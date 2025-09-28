@@ -24,7 +24,8 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "tsConfig": "projects/ng-aus-lib/tsconfig.spec.json"
+            "tsConfig": "projects/ng-aus-lib/tsconfig.spec.json",
+            "polyfills": ["zone.js", "zone.js/testing"]
           }
         }
       }
@@ -40,9 +41,7 @@
           "builder": "@angular/build:application",
           "options": {
             "browser": "projects/demo-app/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/demo-app/tsconfig.app.json",
             "assets": [
               {
@@ -50,9 +49,7 @@
                 "input": "projects/demo-app/public"
               }
             ],
-            "styles": [
-              "projects/demo-app/src/styles.css"
-            ]
+            "styles": ["projects/demo-app/src/styles.css"]
           },
           "configurations": {
             "production": {
@@ -96,10 +93,7 @@
         "test": {
           "builder": "@angular/build:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/demo-app/tsconfig.spec.json",
             "assets": [
               {
@@ -107,9 +101,7 @@
                 "input": "projects/demo-app/public"
               }
             ],
-            "styles": [
-              "projects/demo-app/src/styles.css"
-            ]
+            "styles": ["projects/demo-app/src/styles.css"]
           }
         }
       }
