@@ -9,9 +9,9 @@
     "noImplicitReturns": true,
     "paths": {
       "ng-aus-lib": ["./dist/ng-aus-lib"],
-      "ng-aus-lib/validators": ["projects/ng-aus-lib/src/validators"],
-      "ng-aus-lib/utils": ["projects/ng-aus-lib/src/utils"],
-      "ng-aus-lib/components": ["projects/ng-aus-lib/src/components"]
+      "ng-aus-lib/validators": ["./projects/ng-aus-lib/src/validators"],
+      "ng-aus-lib/utils": ["./projects/ng-aus-lib/src/utils"],
+      "ng-aus-lib/components": ["./projects/ng-aus-lib/src/components"]
     },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
