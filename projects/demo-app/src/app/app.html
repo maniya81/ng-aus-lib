@@ -16,6 +16,22 @@
       />
     </label>
 
+    <label class="field" for="abn">
+      <span>ABN</span>
+      <input
+        id="abn"
+        type="text"
+        formControlName="abn"
+        placeholder="Enter a valid 11-digit ABN"
+        autocomplete="off"
+      />
+
+      <div class="errors" *ngIf="abnControl.invalid && abnControl.touched">
+        <p *ngIf="abnControl.hasError('required')">This field is required.</p>
+        <p *ngIf="abnControl.hasError('abn')">Invalid ABN format.</p>
+      </div>
+    </label>
+
     <button type="submit">Submit</button>
   </form>
 
