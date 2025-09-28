@@ -7,6 +7,12 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
+    "paths": {
+      "ng-aus-lib": ["./dist/ng-aus-lib"],
+      "ng-aus-lib/validators": ["projects/ng-aus-lib/src/validators"],
+      "ng-aus-lib/utils": ["projects/ng-aus-lib/src/utils"],
+      "ng-aus-lib/components": ["projects/ng-aus-lib/src/components"]
+    },
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "isolatedModules": true,
@@ -22,5 +28,19 @@
     "typeCheckHostBindings": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ng-aus-lib/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ng-aus-lib/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/demo-app/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/demo-app/tsconfig.spec.json"
+    }
+  ]
 }
